@@ -21,6 +21,7 @@ def get_japanese_emoticon(file_path, a_emoticon)
     end
     if answer == ""
       answer = apology
+    end
   end
   answer
 end
