@@ -22,11 +22,17 @@ end
 
 def get_english_meaning(file_path, nip)
   emoticons = load_library(file_path)
+  answer = ""
+  if nip = ""
+    answer = "Sorry, that emoticon was not found"
+    return answer
+  end
   emoticons.each do |key, value|
     value.each do |key2, value2|
     if nip == value2[0]
-      return key
+      answer = key
     end
     end
   end
+  answer
 end
