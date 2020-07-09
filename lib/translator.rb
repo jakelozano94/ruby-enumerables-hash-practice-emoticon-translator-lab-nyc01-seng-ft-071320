@@ -12,9 +12,9 @@ end
 def get_japanese_emoticon(file_path, usa)
   emoticons = load_library(file_path)
   emoticons.each do |key, value|
-    key.each do |key2
-    if usa ==value[1]
-      return value[0][0]
+    value.each do |key2, value2|
+    if usa ==value2[1]
+      return value[0]
     end
   end
 end
@@ -22,7 +22,8 @@ end
 def get_english_meaning(file_path, nip)
   emoticons = load_library(file_path)
   emoticons.each do |key, value|
-    if nip == value[0]
+    value.each do |key2, value2
+    if nip == value2[0]
       return value [1][0]
     end
   end
