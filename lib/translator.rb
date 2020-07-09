@@ -31,21 +31,15 @@ def get_english_meaning(file_path, nip)
   emoticons = load_library(file_path)
   answer = ""
   apology = "Sorry, that emoticon was not found"
-  if nip == ""
-    answer = apology
-    puts answer
-  else
   emoticons.each do |key, value|
     value.each do |key2, value2|
     if nip == value2
       answer = key
     end
-    if nip != value2
-      answer = apology
-    end
   end
-    end
 end
+if answer = ""
+  answer = apology
 end
 answer
 end
