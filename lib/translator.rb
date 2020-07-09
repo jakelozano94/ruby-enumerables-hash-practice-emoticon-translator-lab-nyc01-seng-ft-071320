@@ -9,17 +9,17 @@ def load_library(file_path)
 end
 end
 
-def get_japanese_emoticon(file_path, usa)
+def get_japanese_emoticon(file_path, a_emoticon)
   emoticons = load_library(file_path)
   answer = ""
   if usa = ""
     answer = "Sorry, that emoticon was not found"
     puts answer
   else
-  emoticons.each do |key, value|
+  emoticons.each do |meaning, |
     value.each do |key2, value2|
     if usa == value2
-    answer = key
+    answer = 
     end
     end
   end
