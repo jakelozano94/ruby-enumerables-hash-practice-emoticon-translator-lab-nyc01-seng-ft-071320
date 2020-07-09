@@ -38,5 +38,6 @@ def get_english_meaning(file_path, nip)
   if answer == ""
   answer = apology
 end
+end
 answer
 end
