@@ -40,7 +40,7 @@ def get_english_meaning(file_path, nip)
     if nip == value2
       answer = key
     end
-    if nip !== value2
+    if nip != value2
       answer = apology
     end
   end
