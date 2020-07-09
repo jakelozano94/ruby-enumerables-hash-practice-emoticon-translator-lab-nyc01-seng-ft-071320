@@ -24,6 +24,7 @@ def get_japanese_emoticon(file_path, usa)
       answer = "Sorry, that emoticon was not found"
     end
     end
+    end
   end
 end
   answer
@@ -42,6 +43,7 @@ def get_english_meaning(file_path, nip)
       answer = key
       if nip !== value2
         answer = "Sorry, that emoticon was not found"
+      end
     end
     end
   end
