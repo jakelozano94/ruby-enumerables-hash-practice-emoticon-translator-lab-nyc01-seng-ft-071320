@@ -11,7 +11,7 @@ end
 
 def get_japanese_emoticon(file_path, usa)
   emoticons = load_library(file_path)
-  final_hash.each do |key, value|
+  emoticons.each do |key, value|
     if usa ==value[1]
       return value[0][0]
     end
@@ -19,8 +19,8 @@ def get_japanese_emoticon(file_path, usa)
 end
 
 def get_english_meaning(file_path, nip)
-  load_library(file_path)
-  final_hash.each do |key, value|
+  emoticons = load_library(file_path)
+  emoticons.each do |key, value|
     if nip == value[0]
       return value [1][0]
     end
