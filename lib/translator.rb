@@ -37,9 +37,10 @@ def get_english_meaning(file_path, nip)
       answer = key
     end
   end
-end
-if answer = ""
+  if answer = ""
   answer = apology
+end
+
 end
 answer
 end
