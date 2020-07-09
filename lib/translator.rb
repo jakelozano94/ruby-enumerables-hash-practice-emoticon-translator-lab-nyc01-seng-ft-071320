@@ -10,7 +10,7 @@ end
 end
 
 def get_japanese_emoticon(file_path, usa)
-  load_library(file_path)
+  emoticons = load_library(file_path)
   final_hash.each do |key, value|
     if usa ==value[1]
       return value[0][0]
