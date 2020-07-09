@@ -18,8 +18,8 @@ def get_japanese_emoticon(file_path, usa)
   end
 end
 
-def get_english_meaning(yml, nip)
-  load_library(yml)
+def get_english_meaning(file_path, nip)
+  load_library(file_path)
   final_hash.each do |key, value|
     if nip == value[0]
       return value [1][0]
