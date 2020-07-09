@@ -2,15 +2,15 @@
 require "yaml"
 require 'pry'
 
-def load_library(yml)
-  emo = YAML.load_file(yml)
+def load_library(file_path)
+  emo = YAML.load_file(file_path)
   emo.each_with_object({}) do |(key, value), final_hash|
   final_hash[key] = {:english => value[0], :japanese => value[1]}
 end
 end
 
-def get_japanese_emoticon(yml, usa)
-  load_library(yml)
+def get_japanese_emoticon(file_path, usa)
+  load_library(file_path)
   final_hash.each do |key, value|
     if usa ==value[1]
       return value[0][0]
