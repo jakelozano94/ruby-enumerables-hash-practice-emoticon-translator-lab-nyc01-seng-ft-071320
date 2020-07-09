@@ -20,6 +20,8 @@ def get_japanese_emoticon(file_path, usa)
     value.each do |key2, value2|
     if usa == value2
     answer = key
+    if usa !== value2
+      answer = "Sorry, that emoticon was not found"
     end
     end
   end
@@ -38,6 +40,8 @@ def get_english_meaning(file_path, nip)
     value.each do |key2, value2|
     if nip == value2
       answer = key
+      if nip !== value2
+        answer = "Sorry, that emoticon was not found"
     end
     end
   end
