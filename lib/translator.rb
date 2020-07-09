@@ -14,7 +14,7 @@ def get_japanese_emoticon(file_path, usa)
   emoticons.each do |key, value|
     value.each do |key2, value2|
     if usa ==value2[1]
-      return key[0]
+      return value[0]
     end
     end
   end
