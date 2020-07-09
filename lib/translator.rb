@@ -35,5 +35,4 @@ def get_english_meaning(file_path, nip)
     end
   end
 end
-  answer
 end
