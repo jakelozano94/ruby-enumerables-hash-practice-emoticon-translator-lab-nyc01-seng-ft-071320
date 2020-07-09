@@ -26,7 +26,6 @@ def get_japanese_emoticon(file_path, usa)
     end
     end
   end
-end
   answer
 end
 
