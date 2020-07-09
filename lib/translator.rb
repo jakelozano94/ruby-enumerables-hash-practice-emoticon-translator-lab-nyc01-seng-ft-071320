@@ -16,8 +16,8 @@ def get_japanese_emoticon(file_path, a_emoticon)
     answer = "Sorry, that emoticon was not found"
     puts answer
   else
-  emoticons.each do |meaning, |
-    value.each do |key2, value2|
+  emoticons.each do |emotion, lang|
+    lang.each do |inner_key, emot|
     if usa == value2
     answer = 
     end
