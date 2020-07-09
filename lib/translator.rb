@@ -22,7 +22,6 @@ def get_japanese_emoticon(file_path, a_emoticon)
     if answer == ""
       answer = apology
   end
-  end
   answer
 end
 
@@ -38,8 +37,6 @@ def get_english_meaning(file_path, nip)
   end
   if answer == ""
   answer = apology
-end
-
 end
 answer
 end
