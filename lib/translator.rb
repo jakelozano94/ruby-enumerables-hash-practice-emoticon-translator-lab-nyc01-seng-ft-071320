@@ -26,7 +26,7 @@ def get_english_meaning(file_path, nip)
   if nip = ""
     answer = "Sorry, that emoticon was not found"
     return answer
-  end
+  else
   emoticons.each do |key, value|
     value.each do |key2, value2|
     if nip == value2[0]
@@ -34,5 +34,6 @@ def get_english_meaning(file_path, nip)
     end
     end
   end
+end
   answer
 end
