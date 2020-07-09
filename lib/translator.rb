@@ -39,8 +39,8 @@ def get_english_meaning(file_path, nip)
     value.each do |key2, value2|
     if nip == value2
       answer = key
-  else
-    answer = apology
+ # else
+  #  answer = apology
   end
     end
 end
