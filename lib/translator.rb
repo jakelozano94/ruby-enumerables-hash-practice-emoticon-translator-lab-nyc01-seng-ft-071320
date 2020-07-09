@@ -9,7 +9,7 @@ def load_library(file_path)
 end
 end
 
-def get_japanese_emoticon(file_path, a_emoticon)
+def get_japanese_emoticon(file_path, usa)
   emoticons = load_library(file_path)
   answer = ""
   apology = "Sorry, that emoticon was not found"
