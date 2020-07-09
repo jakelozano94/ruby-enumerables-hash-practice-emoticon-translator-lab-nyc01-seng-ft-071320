@@ -30,7 +30,7 @@ def get_english_meaning(file_path, nip)
   emoticons.each do |key, value|
     value.each do |key2, value2|
     if nip == value2[0]
-      answer = key
+      answer == key
     end
     end
   end
