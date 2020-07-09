@@ -23,7 +23,7 @@ end
 def get_english_meaning(file_path, nip)
   emoticons = load_library(file_path)
   answer = ""
-  if nip = ""
+  if nip == ""
     answer = "Sorry, that emoticon was not found"
     return answer
   else
