@@ -12,16 +12,15 @@ end
 def get_japanese_emoticon(file_path, a_emoticon)
   emoticons = load_library(file_path)
   answer = ""
-  if usa = ""
-    answer = "Sorry, that emoticon was not found"
-    puts answer
-  else
+  apology = "Sorry, that emoticon was not found"
   emoticons.each do |emotion, lang|
     lang.each do |inner_key, emoticon|
     if usa == emoticon
     answer = emoticon
     end
     end
+    if answer == ""
+      answer = apology
   end
   end
   answer
